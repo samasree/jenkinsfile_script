@@ -7,4 +7,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      archive '*.jar'
+    }
+  }
 }
